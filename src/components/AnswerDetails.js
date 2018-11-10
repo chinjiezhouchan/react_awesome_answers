@@ -2,9 +2,12 @@ import React from "react";
 
 const AnswerDetails = (props) => (
   <div className="AnswerDetails">
-    <p>{props.body}</p>
-    <p>By {props.user}</p>
-    <p>Created at: {props.created_at}</p>
+    <li key={props.id}>
+      <p>{props.body}</p>
+      {/* <p>By {props.author.first_name}</p> */}
+
+      <small>Created at {props.created_at}</small>
+    </li>
   </div>
 );
 
