@@ -15,6 +15,23 @@ code {
     monospace;
 }
 
+.NavBar {
+  display: flex;
+
+  padding: 10px;
+}
+
+.NavBar > * {
+  margin: 0 10px;
+}
+
+.NavBar > a {
+  color: lightgrey;
+}
+
+.NavBar > a.active {
+  color: deepskyblue;
+}
 
 main {
   padding: 10px;
